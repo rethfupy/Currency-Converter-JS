@@ -1,7 +1,7 @@
 const valueNode = document.querySelector('.value-input');
 const baseCurrencyNode = document.querySelector('.baseCurrency');
 const convertToCurrencyNode = document.querySelector('.convertToCurrency');
-const output = document.querySelector('.output');
+const output = document.querySelector('.value-output');
 
 valueNode.addEventListener('input', calculate, false);
 baseCurrencyNode.addEventListener('change', calculate, false);
@@ -27,6 +27,6 @@ function calculate(){
             let request = data;
             let rate = request.result;
             let result = (value * rate).toFixed(2);
-            output.innerHTML = result;
+            output.value = result;
         });
 }

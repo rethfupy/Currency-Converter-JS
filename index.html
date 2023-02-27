@@ -5,45 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <input type="number" class="value-input">
-    <select class="baseCurrency">
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-        <option value="GBP">GBP</option>
-        <option value="RUB">RUB</option>
-        <option value="UAH">UAH</option>
+    <h1>Currency Converter</h1>
+    <div class="container">
+        <div class="input-block">
+            <input type="number" class="value-input">
+            <select class="baseCurrency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="RUB">RUB</option>
+                <option value="UAH">UAH</option>
+        
+                <option value="SEK">SEK</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="JPY">JPY</option>
+                <option value="CNY">CNY</option>
+        
+                <option value="TRY">TRY</option>
+                <option value="KZT">KZT</option>
+                <option value="BTC">BTC</option>
+            </select>
+        </div>
 
-        <option value="SEK">SEK</option>
-        <option value="AUD">AUD</option>
-        <option value="CAD">CAD</option>
-        <option value="JPY">JPY</option>
-        <option value="CNY">CNY</option>
-
-        <option value="TRY">TRY</option>
-        <option value="KZT">KZT</option>
-        <option value="BTC">BTC</option>
-    </select>
-    <br>
-    <span class="output">0</span>
-    <select class="convertToCurrency">
-        <option value="EUR">EUR</option>
-        <option value="USD">USD</option>
-        <option value="GBP">GBP</option>
-        <option value="RUB">RUB</option>
-        <option value="UAH">UAH</option>
-
-        <option value="SEK">SEK</option>
-        <option value="AUD">AUD</option>
-        <option value="CAD">CAD</option>
-        <option value="JPY">JPY</option>
-        <option value="CNY">CNY</option>
-
-        <option value="TRY">TRY</option>
-        <option value="KZT">KZT</option>
-        <option value="BTC">BTC</option>
-    </select>
+        <div class="output-block">
+            <input class="value-output" value="0.00" readonly>
+            <select class="convertToCurrency">
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="RUB">RUB</option>
+                <option value="UAH">UAH</option>
+        
+                <option value="SEK">SEK</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="JPY">JPY</option>
+                <option value="CNY">CNY</option>
+        
+                <option value="TRY">TRY</option>
+                <option value="KZT">KZT</option>
+                <option value="BTC">BTC</option>
+            </select>
+        </div>
+    </div>
 
     <script src="index.js"></script>
 </body>
